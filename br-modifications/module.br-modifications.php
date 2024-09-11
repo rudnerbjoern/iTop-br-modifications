@@ -10,7 +10,7 @@
 
 SetupWebPage::AddModule(
     __FILE__, // Path to the current file, all other file names are relative to the directory containing this file
-    'br-modifications/0.2.0',
+    'br-modifications/3.1.3',
     array(
         // Identification
         //
@@ -20,21 +20,19 @@ SetupWebPage::AddModule(
         // Setup
         //
         'dependencies' => array(
-            '(itop-config-mgmt/2.5.0 & itop-config-mgmt/<3.0.0)||itop-structure/3.0.0',
-            'teemip-network-mgmt/2.7.0',
-            'teemip-datacenter-mgmt-adaptor/2.7.0',
-            'teemip-virtualization-mgmt-adaptor/2.7.0',
-            'teemip-storage-mgmt-adaptor/2.7.0',
-            'teemip-config-mgmt-adaptor/2.7.0',
+            'itop-config-mgmt/3.1.0',
+            'teemip-network-mgmt/3.0.0',
+            'teemip-datacenter-mgmt-adaptor/3.0.0',
+            'teemip-virtualization-mgmt-adaptor/3.0.0',
+            'teemip-storage-mgmt-adaptor/3.0.0',
+            'teemip-config-mgmt-adaptor/3.0.0',
         ),
         'mandatory' => false,
         'visible' => true,
 
         // Components
         //
-        'datamodel' => array(
-            'model.br-modifications.php',
-        ),
+        'datamodel' => array(),
         'webservice' => array(),
         'data.struct' => array(
             // add your 'structure' definition XML files here,
