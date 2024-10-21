@@ -28,8 +28,8 @@ SetupWebPage::AddModule(
             'itop-endusers-devices/3.1.0',
             'itop-tickets/3.1.0',
             // add TeemIP Extensions (install from iTop Hub)
-            'teemip-network-mgmt/3.0.1',
-            'teemip-network-mgmt-extended/3.0.1',
+            'teemip-network-mgmt-extended/3.1.3',
+            'teemip-ip-mgmt/3.2.0',
             'teemip-datacenter-mgmt-adaptor/3.0.0',
             'teemip-virtualization-mgmt-adaptor/3.0.0',
             'teemip-storage-mgmt-adaptor/3.0.0',
