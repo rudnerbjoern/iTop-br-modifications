@@ -3,14 +3,14 @@
 /**
  * @copyright   Copyright (C) 2022-2024 Björn Rudner
  * @license     https://www.gnu.org/licenses/gpl-3.0.en.html
- * @version     2024-10-21
+ * @version     2024-12-02
  *
  * iTop module definition file
  */
 
 SetupWebPage::AddModule(
     __FILE__, // Path to the current file, all other file names are relative to the directory containing this file
-    'br-modifications/3.1.4',
+    'br-modifications/3.1.5',
     array(
         // Identification
         //
