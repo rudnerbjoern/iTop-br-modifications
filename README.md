@@ -9,19 +9,39 @@ Common modifications for my iTop instances
 
 ## Dependencies
 
-* itop-config-mgmt/3.1.0 - Included in iTop / Enable during installation
-* itop-datacenter-mgmt/3.1.0 - Included in iTop / Enable during installation
-* itop-storage-mgmt/3.1.0 - Included in iTop / Enable during installation
-* itop-virtualization-mgmt/3.1.0 - Included in iTop / Enable during installation
-* itop-endusers-devices/3.1.0 - Included in iTop / Enable during installation
-* itop-tickets/3.1.0 - Included in iTop / Enable during installation
-* [teemip-network-mgmt-extended/3.1.3](https://store.itophub.io/en_US/products/teemip-network-mgmt-extended) - Install from iTop Hub
-* [teemip-ip-mgmt/3.2.0](https://store.itophub.io/en_US/products/teemip-core-ip-mgmt) - Install from iTop Hub
-* [br-location-extension/3.1.9](https://github.com/rudnerbjoern/iTop-br-location-extension) - Install from GitHub
-* [br-org-extension/3.1.4](https://github.com/rudnerbjoern/iTop-br-org-extension) - Install from GitHub
-* [br-landscape/3.1.2](https://github.com/rudnerbjoern/iTop-br-landscape) - Install from GitHub
-* [br-lifecycle/3.1.4](https://github.com/rudnerbjoern/iTop-br-lifecycle) - Install from GitHub
-* [br-cpu-extension/3.1.3](https://github.com/rudnerbjoern/iTop-br-cpu-extension/) - Install from GitHub
+### iTop included
+
+Included in iTop, enable during installation
+
+* itop-config-mgmt/3.1.0
+* itop-datacenter-mgmt/3.1.0
+* itop-storage-mgmt/3.1.0
+* itop-virtualization-mgmt/3.1.0
+* itop-endusers-devices/3.1.0
+* itop-tickets/3.1.0
+
+### Combodo Extensions
+
+Install from iTop Hub or GitHub
+
+* [combodo-vsphere-datamodel/1.1.0](https://github.com/Combodo/combodo-vsphere-datamodel)
+
+### TeemIP Extensions
+
+Install from iTop Hub
+
+* [teemip-ip-mgmt/3.2.0](https://store.itophub.io/en_US/products/teemip-core-ip-mgmt)
+* [teemip-network-mgmt-extended/3.1.3](https://store.itophub.io/en_US/products/teemip-network-mgmt-extended)
+
+### iTop Extensions by Björn Rudner
+
+Install from GitHub
+
+* [br-location-extension/3.1.9](https://github.com/rudnerbjoern/iTop-br-location-extension)
+* [br-org-extension/3.1.4](https://github.com/rudnerbjoern/iTop-br-org-extension)
+* [br-landscape/3.1.2](https://github.com/rudnerbjoern/iTop-br-landscape)
+* [br-lifecycle/3.1.4](https://github.com/rudnerbjoern/iTop-br-lifecycle)
+* [br-cpu-extension/3.1.3](https://github.com/rudnerbjoern/iTop-br-cpu-extension/)
 
 ## iTop Compatibility
 
@@ -31,4 +51,4 @@ The branch [main](https://github.com/rudnerbjoern/iTop-br-modifications/tree/mai
 
 Versions starting with 2.7.x are kept compatible to iTop 2.7
 
-The extension was tested on iTop 2.7.10 and 3.1.1
+The extension was tested on iTop 2.7.10 and 3.2.0-2
