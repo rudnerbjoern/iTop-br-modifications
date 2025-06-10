@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.1">
+<?xml-model href="https://raw.githubusercontent.com/rudnerbjoern/iTop-schema/refs/heads/main/datamodel.v3.2.xsd"?>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.2">
     <!--
     * @copyright   Copyright (C) 2022-2024 Björn Rudner
     * @license     https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -7,7 +8,7 @@
     <classes>
         <class id="IPObject" _delta="must_exist">
             <fields>
-                <!-- set default value for IP adresses to unassigned -->
+                <!-- set default value for IP addresses to unassigned -->
                 <field id="status" _delta="must_exist">
                     <default_value _delta="redefine">unassigned</default_value>
                 </field>
