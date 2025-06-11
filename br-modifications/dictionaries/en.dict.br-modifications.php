@@ -8,6 +8,7 @@
  * Localized data
  */
 
+/** @disregard P1009 Undefined type Dict */
 Dict::Add('EN US', 'English', 'English', array(
     'Class:AggregateLink/Name' => '%2$s - %1$s',
     'Class:DBServer/Name' => '%2$s - %1$s',
