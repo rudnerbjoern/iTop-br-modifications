@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.1">
+<itop_design version="3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://rudnerbjoern.github.io/iTop-schema/3.2/itop_design.xsd">
     <!--
-    * @copyright   Copyright (C) 2022-2024 Björn Rudner
+    * @copyright   Copyright (C) 2022-2025 Björn Rudner
     * @license     https://www.gnu.org/licenses/gpl-3.0.en.html
     -->
     <classes>
         <class id="IPObject" _delta="must_exist">
             <fields>
-                <!-- set default value for IP adresses to unassigned -->
+                <!-- set default value for IP addresses to unassigned -->
                 <field id="status" _delta="must_exist">
                     <default_value _delta="redefine">unassigned</default_value>
                 </field>
@@ -110,5 +110,45 @@
                 </field>
             </fields>
         </class>
+
+        <!-- add role to lnkContactToFunctionalCI -->
+        <class id="lnkContactToFunctionalCI" _delta="must_exist">
+            <fields>
+                <field id="role_id" xsi:type="AttributeExternalKey" _delta="define">
+                    <sql>role_id</sql>
+                    <target_class>ContactType</target_class>
+                    <is_null_allowed>true</is_null_allowed>
+                    <on_target_delete>DEL_MANUAL</on_target_delete>
+                </field>
+                <field id="role_name" xsi:type="AttributeExternalField" _delta="define">
+                    <extkey_attcode>role_id</extkey_attcode>
+                    <target_attcode>name</target_attcode>
+                </field>
+            </fields>
+            <presentation>
+                <details>
+                    <items>
+                        <item id="role_id" _delta="define">
+                            <rank>30</rank>
+                        </item>
+                    </items>
+                </details>
+                <search>
+                    <items>
+                        <item id="role_id" _delta="define">
+                            <rank>30</rank>
+                        </item>
+                    </items>
+                </search>
+                <list>
+                    <items>
+                        <item id="role_id" _delta="define">
+                            <rank>30</rank>
+                        </item>
+                    </items>
+                </list>
+            </presentation>
+        </class>
+
     </classes>
 </itop_design>
